@@ -168,12 +168,19 @@ def quitter_application():
 #-- PROGRAMME PRINCIPAL -- #
 if getattr(sys, 'frozen', False):
     # Si l'app est compilée en exe
-    chemin_json = os.path.join(sys._MEIPASS, "tasks.json")
+    base_path = sys._MEIPASS  # dossier temporaire PyInstaller
+    data_path = os.path.join(os.path.dirname(sys.executable), 'tasks.json')
 else:
     # En mode script
-    chemin_json = "tasks.json"
+    base_path = os.path.dirname(__file__)
+    data_path = os.path.join(base_path, 'tasks.json')
 
-FICHIER_TACHES = chemin_json
+# Créer tasks.json s'il n'existe pas
+if not os.path.exists(data_path):
+    with open(data_path, 'w', encoding='utf-8') as f:
+        json.dump([], f)
+
+FICHIER_TACHES = data_path
 
 # Création de la fenêtre principale
 root = tk.Tk()                                                  # Crée la fenêtre principale
