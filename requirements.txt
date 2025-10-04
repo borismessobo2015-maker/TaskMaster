@@ -1,0 +1,10 @@
+# Librairies Python utilisées par TaskMaster
+
+# Interface graphique
+tkinter
+
+# Manipulation de données (pour CSV)
+pandas
+
+# Création d’exécutables (optionnel, pour PyInstaller)
+pyinstaller

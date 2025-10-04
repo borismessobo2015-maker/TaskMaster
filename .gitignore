@@ -1,0 +1,50 @@
+# Fichiers de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Fichiers de configuration locaux
+*.log
+*.pot
+*.pyproj
+*.idea/
+*.vscode/
+*.DS_Store
+*.mypy_cache/
+*.pytest_cache/
+*.coverage
+.coverage.*
+
+# Sorties de build
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Fichiers générés par PyInstaller
+*.spec
+
+# Fichiers temporaires
+*.bak
+*.tmp
+*.swp
+*.swo
+~*
+
+# Fichiers de test
+tests/__pycache__/
+test_*.py
+
+# Sauvegardes de l’application
+tasks.json
+tasks.csv
