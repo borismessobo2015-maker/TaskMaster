@@ -14,7 +14,7 @@ Elle permet d’ajouter, modifier, filtrer et sauvegarder automatiquement vos t�
 
 📦 Installation
 1️⃣ Cloner le dépôt
-git clone https://github.com/<ton-nom-utilisateur>/TaskMaster.git
+git clone https://github.com/borismessobo2015-maker/TaskMaster.git
 cd TaskMaster
 
 2️⃣ Installer Python
